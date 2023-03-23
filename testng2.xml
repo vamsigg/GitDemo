@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">   <!-- serial and parallel excution-->
+	
+  <listeners>
+	<listener class-name="Automation.Testcomponents.Listeners"/>
+  </listeners>
+	
+  <test thread-count="5" name="standaloneTest">   <!-- maximum 5 methods in this class is allowed to run parallelly-->
+    <classes>
+      <class name="Automation.Tests.standalonetestPOM"/> 
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="errorvalidationTest">
+    <classes>
+      <class name="Automation.Tests.errorvalidation"/>  
+    </classes>
+  </test>
+   
+</suite>
