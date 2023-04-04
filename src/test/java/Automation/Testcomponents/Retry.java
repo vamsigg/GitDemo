@@ -3,7 +3,7 @@ package Automation.Testcomponents;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class Retry implements IRetryAnalyzer{   //to handle failures in inconsistensy
+public class Retry implements IRetryAnalyzer{   //to handle failures because of  inconsistensy
 
 	int count=0;
 	int maxTry=1;

@@ -15,6 +15,7 @@ public class Listeners extends BaseTest implements ITestListener
 {
 	    ExtentTest test;
 	    ExtentReports extent=ExtentreportNG.getreportobject();	
+	   
 	    ThreadLocal<ExtentTest> extenttest=new ThreadLocal<ExtentTest>();  //to avoid overlap while running in parallel
 	    
 	    @Override		
@@ -37,7 +38,7 @@ public class Listeners extends BaseTest implements ITestListener
 	    	
 	    	extenttest.get().fail(result.getThrowable()); //we are failing you for reaching this block
 	    	
-	    	//screenshot//attach to the report
+	    	//screenshot //attach to the report
 	    	try //to get the driver info
 	    	{
 				driver=(WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
@@ -46,8 +47,9 @@ public class Listeners extends BaseTest implements ITestListener
 	    	{
 				e1.printStackTrace();
 	    	}
-	    	
+		
 	    	String filepath = null;
+	    	
 			try
 			{
 				filepath = getscreenshot(result.getMethod().getMethodName(),driver);//particular test driver info is also stored here
@@ -56,6 +58,7 @@ public class Listeners extends BaseTest implements ITestListener
 			{	
 				e.printStackTrace();
 			}
+			
 			extenttest.get().addScreenCaptureFromPath(filepath,result.getMethod().getMethodName());//add screenshot to extent report  	
 	    }
 	    

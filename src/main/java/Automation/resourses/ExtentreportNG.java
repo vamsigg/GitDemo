@@ -5,7 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentreportNG {
 
-	public static ExtentReports getreportobject() //we can access this method directly with class name
+	public static ExtentReports getreportobject()          //we can access this method directly with class name
 	{
 		String path=System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter=new ExtentSparkReporter(path);	

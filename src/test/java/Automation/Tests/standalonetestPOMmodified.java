@@ -20,21 +20,24 @@ public class standalonetestPOMmodified extends BaseTest{
 	public void standalone() throws IOException
 	{
 		String productname="IPHONE 13 PRO";
+		
 		ProductCatalogue productcatalogue=landingpage.loginapplication("iqa@gmail.com","738218@Ggvk");	
 		productcatalogue.getproductlist();
 		productcatalogue.addproducttocart(productname);
-		Cartpage cartpage=productcatalogue.gotocartpage();
 		
+		Cartpage cartpage=productcatalogue.gotocartpage();
 		Boolean match=cartpage.verifyproductdisplay(productname);
 		Assert.assertTrue(match);
+		
 		Checkoutpage Checkoutpage=cartpage.gotocheckout();
 		Checkoutpage.selectcountry("india");
+		
 		conformationpage conformationpage=Checkoutpage.submitorder();
 		String conformmessage=conformationpage.getconformationmsg();
 	    Assert.assertTrue(conformmessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	}
 	
-	@Test(dataProvider="getData",dependsOnMethods= {"standalone"})
+	/*@Test(dataProvider="getData",dependsOnMethods= {"standalone"})
 	public void orderhistory(String email,String password,String product)
 	{
 		//to verify zara coat 3 is displaying in the order page
@@ -43,7 +46,6 @@ public class standalonetestPOMmodified extends BaseTest{
 		orderspage.gotoorderspage();
 		Assert.assertTrue(orderspage.verifyorderdisplay(product));
 	}
-	
 	@DataProvider
 	public String[][] getData() throws IOException
 	{
@@ -65,10 +67,10 @@ public class standalonetestPOMmodified extends BaseTest{
 		}	
 		
 	    return logindata;				
-	}	
+	}*/	
 	
 	
-/*	@Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
+	/*@Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
 	public void orderhistory(String email,String password,String product)
 	{
 		//to verify zara coat 3 is displaying in the order page
@@ -77,7 +79,6 @@ public class standalonetestPOMmodified extends BaseTest{
 		orderspage.gotoorderspage();
 		Assert.assertTrue(orderspage.verifyorderdisplay(product));
 	}
-	
     @DataProvider
 	public Object[][] getdata()
 	{
@@ -85,11 +86,8 @@ public class standalonetestPOMmodified extends BaseTest{
 	}*/
 	
 	
-	
-	
-/*	//if we have more parameters will go for hashmap
-
-    @Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
+	//if we have more parameters will go for hashmap
+ /* @Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
 	public void orderhistory(HashMap<String,String> input)
 	{
 		//to verify zara coat 3 is displaying in the order page
@@ -98,7 +96,6 @@ public class standalonetestPOMmodified extends BaseTest{
 		orderspage.gotoorderspage();
 		Assert.assertTrue(orderspage.verifyorderdisplay(input.get("product")));
 	}
-	
     @DataProvider
 	public Object[][] getdata() throws IOException
 	{
@@ -108,18 +105,16 @@ public class standalonetestPOMmodified extends BaseTest{
 		map.put("product", "IPHONE 13 PRO");
 		
 		HashMap<String,String> map1=new HashMap<String,String>();
-		map1.put("email", "iqa@gmail.com");
-		map1.put("password", "738218@Ggvk");
-		map1.put("product", "IPHONE 13 PRO");
+		map1.put("email","iqa@gmail.com");
+		map1.put("password","738218@Ggvk");
+		map1.put("product","IPHONE 13 PRO");
 			
 		return new Object[][]  {{map},{map1}};
-	}*/
+	} */
     
 	
-	
-    //this hashmaps will automatically create by scaning json
-	
-	/*@Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
+    //this hashmaps will automatically create by scaning json	
+	@Test(dataProvider="getdata",dependsOnMethods= {"standalone"})
 	public void orderhistory(HashMap<String,String> input)
 	{
 	//to verify zara coat 3 is displaying in the order page
@@ -128,13 +123,11 @@ public class standalonetestPOMmodified extends BaseTest{
 	orderspage.gotoorderspage();
 	Assert.assertTrue(orderspage.verifyorderdisplay(input.get("product")));
 	}
-		
-
     @DataProvider
 	public Object[][] getdata() throws IOException
 	{
-    List<HashMap<String,String>> data=getjsondatatomap(System.getProperty("user.dir")+"\\src\\test\\java\\Automation\\Data\\orderdata.json");
-    return new Object[][]  {{data.get(0)},{data.get(1)}};
-	}*/
+        List<HashMap<String,String>> data=getjsondatatomap(System.getProperty("user.dir")+"\\src\\test\\java\\Automation\\Data\\orderdata.json");
+        return new Object[][]  {{data.get(0)},{data.get(1)}};
+	}
 }
 

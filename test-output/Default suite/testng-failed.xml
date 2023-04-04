@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.Tests.standalonetestPOMmodified">
+      <class name="Automation.Tests.standalonetestPOM">
         <methods>
-          <include name="teardown"/>
           <include name="standalone"/>
-          <include name="launchapplication"/>
-          <include name="orderhistory"/>
         </methods>
-      </class> <!-- Automation.Tests.standalonetestPOMmodified -->
+      </class> <!-- Automation.Tests.standalonetestPOM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class abstractcomponent {
 
-	WebDriver driver;
+    WebDriver driver;
 	
 	public abstractcomponent(WebDriver driver) 
 	{
@@ -36,4 +36,5 @@ public class abstractcomponent {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.invisibilityOf(ele));
 	}
+	
 }

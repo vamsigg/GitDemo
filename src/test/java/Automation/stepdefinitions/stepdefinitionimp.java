@@ -95,14 +95,9 @@ public class stepdefinitionimp extends BaseTest{
 	    driver.close();
 	}
 
-	
-
-
     @Then("^\"([^\"]*)\" message is displayed$")
     public void something_message_is_displayed(String strArg1) throws Throwable {
     	Assert.assertEquals("Incorrect email or password.",landingpage.geterrormsg());
     	driver.close();
-    }
-	
-	
+    }	
 }

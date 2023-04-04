@@ -1,10 +1,11 @@
+@regression
 Feature: purchase the order from ecom website
 I want to use this template for my feature file
 
 Background:                            
 Given I landed on the ecommerse page
 
-   @regression           
+   @tag1        
    Scenario Outline: positive test of submitting the order
    Given Logged in with username <name> and password <password>
    When I add product <productname> to cart

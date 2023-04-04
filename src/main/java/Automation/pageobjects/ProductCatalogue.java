@@ -29,10 +29,10 @@ public class ProductCatalogue extends abstractcomponent {
 	
 	By addtocaart=By.cssSelector(".card-body button:last-of-type");
 	
+	By toastmesg=By.cssSelector("#toast-container");
+	
 	@FindBy(css=".ng-animating")
 	WebElement spinner;
-	
-	By toastmesg=By.cssSelector("#toast-container");
 	
 	@FindBy(css="[routerlink*='cart']")
 	WebElement cartHeader;

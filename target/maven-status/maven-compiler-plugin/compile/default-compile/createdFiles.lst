@@ -1,0 +1,9 @@
+Automation\pageobjects\Checkoutpage.class
+Automation\pageobjects\Orderspage.class
+Automation\abstractcomponents\abstractcomponent.class
+Automation\pageobjects\Cartpage.class
+Automation\pageobjects\conformationpage.class
+Automation\pageobjects\ProductCatalogue.class
+Automation\resourses\ExtentreportNG.class
+Automation\pageobjects\Landingpage.class
+Automation\resourses\XLUtility.class

@@ -38,7 +38,7 @@ public class BaseTest {
 		pro.load(fis);
 		
 		String browsename = System.getProperty("browser")!=null ? System.getProperty("browser") : pro.getProperty("browser");
-			                                             //java turnery operator  //               
+			                                                   //java turnery operator  //               
 		//String browsename=pro.getProperty("browser");
 		
 		if(browsename.contains("chrome"))    //for avoiding conflict with headless "chromeheadless"
@@ -71,7 +71,7 @@ public class BaseTest {
 		return driver;
 	}	
 	
-	@BeforeMethod(alwaysRun=true) // we want to run this methods irrespective of the conditions
+	@BeforeMethod(alwaysRun=true)        // we want to run this methods irrespective of the conditions
 	public Landingpage launchapplication() throws IOException
 	{
 		driver=initialisedriver();
@@ -92,7 +92,7 @@ public class BaseTest {
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		File file=new File(System.getProperty("user.dir")+"//screenshots//"+ testCaseName +".png");
 		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir")+"//screenshots//"+ testCaseName +".png";//retuning thepath
+		return System.getProperty("user.dir")+"//screenshots//"+ testCaseName +".png";    //retuning thepath
 	}
 	
 	public List<HashMap<String, String>> getjsondatatomap(String filepath) throws IOException

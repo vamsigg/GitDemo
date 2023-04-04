@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
 <suite  parallel="tests" name="Suite">  
 	
   <groups>
@@ -13,9 +12,8 @@
 	<listener class-name="Automation.Testcomponents.Listeners"/>
   </listeners>
 	
-	
   <test thread-count="5" name="standaloneTest"> 
-    <classes> <!-- maximum 5 methods in this class is allowed to run parallelly(5 browser instans at a time)-->
+    <classes>   <!-- maximum 5 methods in this class is allowed to run parallelly(5 browser instans at a time)-->
       <class name="Automation.Tests.standalonetestPOM"/> 
     </classes>
   </test> 

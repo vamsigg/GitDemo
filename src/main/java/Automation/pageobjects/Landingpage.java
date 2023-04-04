@@ -15,11 +15,11 @@ public class Landingpage extends abstractcomponent {
 	{
 		super(driver);
 		
-		this.driver=driver;               //initialization
-		PageFactory.initElements(driver, this);
+		this.driver=driver;                                          //initialization
+		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(id="userEmail")               //Pagefactory   //WebElement useremail=driver.findElement(By.id("userEmail"));
+	@FindBy(id="userEmail")            //Pagefactory   //WebElement useremail=driver.findElement(By.id("userEmail"));
 	WebElement useremail;
 	
 	@FindBy(id="userPassword")
@@ -28,7 +28,7 @@ public class Landingpage extends abstractcomponent {
 	@FindBy(id="login")
 	WebElement usersubmit;
 	
-	@FindBy(css="[class*='flyInOut']")    //.ng-tns-c4-9.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
+	@FindBy(css="[class*='flyInOut']") //.ng-tns-c4-9.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
 	WebElement errormsg;
 	
 	public void goTo()
@@ -47,7 +47,6 @@ public class Landingpage extends abstractcomponent {
 		useremail.sendKeys(email);
 		userpassword.sendKeys(password);
 		usersubmit.click();
-		
 		ProductCatalogue productcatalogue=new ProductCatalogue(driver);
 		return productcatalogue;
 	}	

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+      <span class="top-banner-font-1">2 suites</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -118,7 +118,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite__0_" class="navigator-link">
-              <span class="suite-name border-failed">Suite (0)</span>
+              <span class="suite-name border-passed">Suite (0)</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -139,7 +139,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite__0_" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -171,21 +171,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite__0_" class="hide-methods failed suite-Suite__0_"> (hide)</a> <!-- hide-methods failed suite-Suite__0_ -->
-                      <a href="#" panel-name="suite-Suite__0_" class="show-methods failed suite-Suite__0_"> (show)</a> <!-- show-methods failed suite-Suite__0_ -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite__0_">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite__0_" title="Automation.Tests.errorvalidation" class="method navigator-link" hash-for-method="producterrorvalidation">producterrorvalidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite__0_ -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -196,7 +182,7 @@
                     <div class="method-list-content passed suite-Suite__0_">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite__0_" title="Automation.Tests.errorvalidation" class="method navigator-link" hash-for-method="loginerrorvalidation">loginerrorvalidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite__0_" title="Automation.Tests.standalonetestPOM" class="method navigator-link" hash-for-method="standalone">standalone</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite__0_ -->
@@ -228,61 +214,17 @@
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="suite-Suite__0_" class="panel Suite__0_">
-          <div class="suite-Suite__0_-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Automation.Tests.errorvalidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="producterrorvalidation">
-                  </a> <!-- producterrorvalidation -->
-                  <span class="method-name">producterrorvalidation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-wka-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1025, 27). Other element would receive the click: &lt;div _ngcontent-wka-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [24e67268057672a906bbb6403842ac4c, clickElement {id=1903026e-dec5-477e-aeb8-5724492cf586}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mfcwl\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49402/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (24e67268057672a906bbb6403842ac4c)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
-Session ID: 24e67268057672a906bbb6403842ac4c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at Automation.pageobjects.ProductCatalogue.gotocartpage(ProductCatalogue.java:63)
-	at Automation.Tests.errorvalidation.producterrorvalidation(errorvalidation.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite__0_-class-failed -->
           <div class="suite-Suite__0_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Automation.Tests.errorvalidation</span>
+              <span class="class-name">Automation.Tests.standalonetestPOM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginerrorvalidation">
-                  </a> <!-- loginerrorvalidation -->
-                  <span class="method-name">loginerrorvalidation</span>
+                  <a name="standalone">
+                  </a> <!-- standalone -->
+                  <span class="method-name">standalone</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -336,11 +278,11 @@ Session ID: 24e67268057672a906bbb6403842ac4c
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Automation.Testcomponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;standaloneTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;standaloneTestpom&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.Tests.standalonetestPOM&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- standaloneTest --&gt;
+  &lt;/test&gt; &lt;!-- standaloneTestpom --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;errorvalidationTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.Tests.errorvalidation&quot;/&gt;
@@ -372,7 +314,7 @@ Session ID: 24e67268057672a906bbb6403842ac4c
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">standaloneTest (1 class)</span>
+                <span class="test-name">standaloneTestpom (1 class)</span>
               </li>
               <li>
                 <span class="test-name">errorvalidationTest (1 class)</span>
@@ -400,14 +342,6 @@ Session ID: 24e67268057672a906bbb6403842ac4c
             <span class="header-content">Groups for Suite (0)</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">ErrorHandling</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginerrorvalidation</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -428,12 +362,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginerrorvalidation')
 data.setCell(0, 2, 'Automation.Tests.errorvalidation')
-data.setCell(0, 3, 704);
+data.setCell(0, 3, 881);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -453,20 +387,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'producterrorvalidation')
-data.setCell(0, 2, 'Automation.Tests.errorvalidation')
-data.setCell(0, 3, 5013);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginerrorvalidation')
-data.setCell(1, 2, 'Automation.Tests.errorvalidation')
-data.setCell(1, 3, 900);
+data.setCell(0, 1, 'standalone')
+data.setCell(0, 2, 'Automation.Tests.standalonetestPOM')
+data.setCell(0, 3, 10063);
 window.suiteTableData['Suite__0_']= { tableData: data, tableDiv: 'times-div-Suite__0_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite__0_">
               </div> <!-- times-div-Suite__0_ -->
             </div> <!-- times-div -->
@@ -527,11 +457,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginerrorvalidation</span>
-                <span class="method-start">10210 ms</span>
+                <span class="method-start">20918 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">10925 ms</span>
+                <span class="method-start">21803 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -541,33 +471,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">Automation.Tests.standalonetestPOM</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">standalone</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">Automation.Tests.errorvalidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchapplication</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginerrorvalidation</span>
-                <span class="method-start">7709 ms</span>
+                <span class="method-start">5224 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">8609 ms</span>
+                <span class="method-start">6225 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchapplication</span>
-                <span class="method-start">8847 ms</span>
+                <span class="method-start">6340 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">producterrorvalidation</span>
-                <span class="method-start">16371 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">22604 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

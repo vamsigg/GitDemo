@@ -10,10 +10,9 @@ import Automation.pageobjects.ProductCatalogue;
 
 public class errorvalidation extends BaseTest{
 
-	@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)//if we want to retry in case off failure
-	public void loginerrorvalidation() throws IOException{
-		
-		String productname="ZARA COAT 3";
+	@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)      //if we want to retry in case off failure
+	public void loginerrorvalidation() throws IOException{	
+		//String productname="ZARA COAT 3";
 	    landingpage.loginapplication("iqaa@gmail.com","a738218@Ggvk");	
 		Assert.assertEquals("Incorrect email or password.",landingpage.geterrormsg());
 	}

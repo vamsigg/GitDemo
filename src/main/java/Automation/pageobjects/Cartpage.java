@@ -15,15 +15,16 @@ public class Cartpage extends abstractcomponent {
 	public Cartpage(WebDriver driver)
 	{
 		super(driver);
+		
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css="li[class='totalRow'] button[type='button']")
-	WebElement checkoutele;
-	
 	@FindBy(css=".cartSection h3")
 	List<WebElement> carproducts;
+	
+	@FindBy(css="li[class='totalRow'] button[type='button']")
+	WebElement checkoutele;
 	
 	public Boolean verifyproductdisplay(String Productname)
 	{

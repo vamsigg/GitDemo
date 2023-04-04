@@ -1,133 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-17T15:57:47 IST" name="Suite" finished-at="2023-03-17T15:57:58 IST" duration-ms="11342">
+  <suite started-at="2023-04-04T12:46:27 IST" name="Suite" finished-at="2023-04-04T12:46:49 IST" duration-ms="22153">
     <groups>
       <group name="ErrorHandling">
-        <method signature="errorvalidation.loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@63787180]" name="loginerrorvalidation" class="Automation.Tests.errorvalidation"/>
+        <method signature="errorvalidation.loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@24111ef1]" name="loginerrorvalidation" class="Automation.Tests.errorvalidation"/>
       </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2023-03-17T15:57:47 IST" name="standaloneTest" finished-at="2023-03-17T15:57:47 IST" duration-ms="27">
+    <test started-at="2023-04-04T12:46:27 IST" name="standaloneTest" finished-at="2023-04-04T12:46:27 IST" duration-ms="31">
     </test> <!-- standaloneTest -->
-    <test started-at="2023-03-17T15:57:47 IST" name="errorvalidationTest" finished-at="2023-03-17T15:57:58 IST" duration-ms="11342">
+    <test started-at="2023-04-04T12:46:27 IST" name="errorvalidationTest" finished-at="2023-04-04T12:46:49 IST" duration-ms="22153">
       <class name="Automation.Tests.errorvalidation">
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:Automation.Tests.errorvalidation@63787180]" started-at="2023-03-17T15:57:47 IST" name="launchapplication" finished-at="2023-03-17T15:57:57 IST" duration-ms="10207" status="PASS">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:Automation.Tests.errorvalidation@24111ef1]" started-at="2023-04-04T12:46:27 IST" name="launchapplication" finished-at="2023-04-04T12:46:48 IST" duration-ms="20916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapplication -->
-        <test-method signature="loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@63787180]" started-at="2023-03-17T15:57:57 IST" name="loginerrorvalidation" finished-at="2023-03-17T15:57:58 IST" duration-ms="704" status="PASS">
+        <test-method signature="loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@24111ef1]" started-at="2023-04-04T12:46:48 IST" name="loginerrorvalidation" finished-at="2023-04-04T12:46:49 IST" duration-ms="881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginerrorvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Automation.Tests.errorvalidation@63787180]" started-at="2023-03-17T15:57:58 IST" name="teardown" finished-at="2023-03-17T15:57:58 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Automation.Tests.errorvalidation@24111ef1]" started-at="2023-04-04T12:46:49 IST" name="teardown" finished-at="2023-04-04T12:46:49 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Automation.Tests.errorvalidation -->
     </test> <!-- errorvalidationTest -->
   </suite> <!-- Suite -->
-  <suite started-at="2023-03-17T15:57:58 IST" name="Suite (0)" finished-at="2023-03-17T15:58:21 IST" duration-ms="22797">
+  <suite started-at="2023-04-04T12:46:49 IST" name="Suite (0)" finished-at="2023-04-04T12:46:59 IST" duration-ms="10064">
     <groups>
       <group name="ErrorHandling">
-        <method signature="errorvalidation.loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" name="loginerrorvalidation" class="Automation.Tests.errorvalidation"/>
+        <method signature="errorvalidation.loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@5143c662]" name="loginerrorvalidation" class="Automation.Tests.errorvalidation"/>
       </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2023-03-17T15:57:58 IST" name="errorvalidationTest" finished-at="2023-03-17T15:58:21 IST" duration-ms="22797">
-      <class name="Automation.Tests.errorvalidation">
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:57:58 IST" name="launchapplication" finished-at="2023-03-17T15:58:06 IST" duration-ms="7709" status="PASS">
+    <test started-at="2023-04-04T12:46:49 IST" name="standaloneTestpom" finished-at="2023-04-04T12:46:59 IST" duration-ms="10064">
+      <class name="Automation.Tests.standalonetestPOM">
+        <test-method signature="standalone()[pri:0, instance:Automation.Tests.standalonetestPOM@403f0a22]" started-at="2023-04-04T12:46:49 IST" name="standalone" finished-at="2023-04-04T12:46:59 IST" duration-ms="10063" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="loginerrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:58:06 IST" name="loginerrorvalidation" finished-at="2023-03-17T15:58:07 IST" duration-ms="900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginerrorvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:58:07 IST" name="teardown" finished-at="2023-03-17T15:58:07 IST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:58:07 IST" name="launchapplication" finished-at="2023-03-17T15:58:14 IST" duration-ms="7524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="producterrorvalidation()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:58:14 IST" name="producterrorvalidation" finished-at="2023-03-17T15:58:19 IST" duration-ms="5013" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-wka-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1025, 27). Other element would receive the click: <div _ngcontent-wka-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=111.0.5563.65)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [24e67268057672a906bbb6403842ac4c, clickElement {id=1903026e-dec5-477e-aeb8-5724492cf586}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mfcwl\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49402/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (24e67268057672a906bbb6403842ac4c)] -> css selector: [routerlink*='cart']]
-Session ID: 24e67268057672a906bbb6403842ac4c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-wka-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1025, 27). Other element would receive the click: <div _ngcontent-wka-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=111.0.5563.65)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [24e67268057672a906bbb6403842ac4c, clickElement {id=1903026e-dec5-477e-aeb8-5724492cf586}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mfcwl\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49402/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (24e67268057672a906bbb6403842ac4c)] -> css selector: [routerlink*='cart']]
-Session ID: 24e67268057672a906bbb6403842ac4c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy14.click(Unknown Source)
-at Automation.pageobjects.ProductCatalogue.gotocartpage(ProductCatalogue.java:63)
-at Automation.Tests.errorvalidation.producterrorvalidation(errorvalidation.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- producterrorvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Automation.Tests.errorvalidation@74f5ce22]" started-at="2023-03-17T15:58:21 IST" name="teardown" finished-at="2023-03-17T15:58:21 IST" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Automation.Tests.errorvalidation -->
-    </test> <!-- errorvalidationTest -->
+        </test-method> <!-- standalone -->
+      </class> <!-- Automation.Tests.standalonetestPOM -->
+    </test> <!-- standaloneTestpom -->
   </suite> <!-- Suite (0) -->
 </testng-results>

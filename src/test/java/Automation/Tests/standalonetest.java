@@ -31,14 +31,14 @@ public class standalonetest {
 		driver.findElement(By.id("userEmail")).sendKeys("iqa@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("738218@Ggvk");
 		driver.findElement(By.id("login")).click();
-		String productname="IPHONE 13 PRO";
 		
+		String productname="IPHONE 13 PRO";
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
-		List<WebElement> products=driver.findElements(By.cssSelector(".mb-3"));
-		
+		List<WebElement> products=driver.findElements(By.cssSelector(".mb-3"));	
 		WebElement prod=products.stream().filter(product->product.findElement(By.cssSelector("b")).getText()
 				        .equals(productname)).findFirst().orElse(null);      //if we want webelement use filter
+		
 		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 			
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
@@ -52,13 +52,14 @@ public class standalonetest {
 		
 		driver.findElement(By.cssSelector("li[class='totalRow'] button[type='button']")).click();
 		
-		Actions a=new Actions(driver);
-		a.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"india").build().perform();
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
+	//	Actions a=new Actions(driver);
+	//	a.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"india").build().perform();
+		driver.findElement(By.cssSelector("[placeholder='Select Country']")).sendKeys("India");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 	    driver.findElement(By.cssSelector(".ta-item:nth-of-type(2)")).click();
 	   	 
 	    WebElement e = driver.findElement(By.cssSelector(".btnn"));
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    JavascriptExecutor js = (JavascriptExecutor)driver;
 	    js.executeScript("arguments[0].click(0);", e);   
 	   
 	    String conformmsg=driver.findElement(By.cssSelector(".hero-primary")).getText().trim();

@@ -21,22 +21,22 @@ public class Checkoutpage extends abstractcomponent {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css=".btnn")
-	WebElement submit;
-	
 	@FindBy(css="[placeholder='Select Country']")
 	WebElement country;
+	
+	By results=By.cssSelector(".ta-results");
 	
 	@FindBy(xpath="//button[contains(@class,'ta-item')][2]")
 	WebElement selectcountry;
 	
-	By results=By.cssSelector(".ta-results");
+	@FindBy(css=".btnn")
+	WebElement submit;
 	
 	public void selectcountry(String countryname)
 	{
 		Actions a=new Actions(driver);
 		a.sendKeys(country,countryname).build().perform();
-		waitforelementtoappear(By.cssSelector(".ta-results"));
+		waitforelementtoappear(results);
 		selectcountry.click();
 	}
 	
@@ -49,5 +49,5 @@ public class Checkoutpage extends abstractcomponent {
 		//submit.click();
 		 
 		return new conformationpage(driver);
-	}
+	 }
 }
